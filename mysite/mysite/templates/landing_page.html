@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Landing Page</title>
+    <link rel="stylesheet" type="text/css" href="{% static "mysite/css/animate.css" %}" />
+    <link rel="stylesheet" type="text/css" href="{% static "mysite/css/bootstrap.css" %}" />
+    <link rel="stylesheet" type="text/css" href="{% static "mysite/css/landing_page.css" %}" />
+
+    <script src="{% static 'mysite/js/popper.js' %}"></script>
+    <script type="text/javascript" src="{% static 'mysite/js/jquery-3.2.1.js' %}"></script>
+    <script type="text/javascript" src="{% static 'mysite/js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'mysite/js/webcam.js' %}"></script>
+    <script type="text/javascript" src="{% static 'mysite/js/landing.js' %}"></script>
+
+</head>
+<body>
+
+<div id="landing-div">
+    <img id="landing-img" src="{% static 'mysite/img/find.jpg' %}" class="animated fadeIn">
+    <div id="div-header">
+        <h1>Find.ai</h1>
+    </div>
+    <button id="show-login" onclick="show_login()" class="btn btn-default">
+        Find
+    </button>
+</div>
+
+<div id="login-form">
+    <div id="loader"></div>
+    <h1>Identify Yourself</h1>
+    <div id="camera-frame">
+        <div id="camera">
+        </div>
+        <button id="camera-btn" onclick="take_snapshot()">
+        </button>
+    </div>
+</div>
+
+<div id="msg-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 id="msg-header" class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+                <p id="msg-body"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

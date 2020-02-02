@@ -1,0 +1,20 @@
+form {
+    margin: 2em;
+    /*width: 35%;*/
+}
+
+/*#exampleInputFirstName {*/
+    /*width: 100%;*/
+/*}*/
+
+/*#exampleInputLastName {*/
+    /*width: 100%;*/
+/*}*/
+
+/*#exampleInputEmail1 {*/
+    /*width: 39%;*/
+/*}*/
+
+.form-group {
+    margin-right: 2em;
+}

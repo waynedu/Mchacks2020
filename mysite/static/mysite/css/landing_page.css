@@ -1,0 +1,126 @@
+/* Landing Page Img */
+#landing-div {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#landing-img{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+
+#div-header{
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -moz-transform: translate(-50%, -50%) !important;
+    -webkit-transform: translate(-50%, -50%) !important;
+    transform: translate(-50%, -50%) !important;
+    border-bottom: 7px double rgba(255, 255, 255, 0.7);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border-top: 7px double rgba(255, 255, 255, 0.7);
+    width: 55%;
+    padding: 0.5rem;
+    opacity: 0;
+}
+
+#div-header > h1{
+    font-size: 5rem;
+    text-shadow: 0 1px 5px #000;
+    color: #e6e6e6;
+}
+
+#div-header, #show-login{
+    animation-duration: .6s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+
+#show-login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 150px) !important;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 200px;
+    color: white;
+    font-size: 1.5rem;
+    width: 7rem;
+    opacity: 0;
+    transition: all .3s cubic-bezier(0,0,0,0);
+}
+
+#show-login:hover{
+    background-color: white;
+    color: #000;
+}
+
+/* Login Container */
+#login-form{
+    display: none;
+    width: 50%;
+    padding: .75em;
+    margin: 0 auto;
+}
+
+#login-form > h1{
+    text-align: center;
+    color: #008cba;
+}
+
+#camera-frame{
+    text-align: center;
+    overflow: hidden;
+}
+
+#camera{
+    height: 450px;
+    width: 75%;
+    text-align: center;
+    border: 3px solid #008cba;
+    border-radius: 20px;
+    box-shadow:0 2px 2px rgba(0,0,0,0.2),0 1px 5px rgba(102, 102, 102, 0.2),0 0 0 12px rgba(192, 192, 192, 0.5);
+    margin: 2% auto 0;
+}
+
+#camera-btn{
+    width: 100px;
+    border: 2px solid #008cba;
+    border-radius: 50%;
+    height: 100px;
+    background-size: 69% !important;
+    background: url('../img/photo-camera.png') no-repeat center;
+    background-size: auto auto;
+    margin: 15px auto 0;
+    outline: none;
+    transition: all .3s cubic-bezier(0,0,0,0);
+}
+
+#camera-btn:hover{
+    box-shadow: 0 0 13px #008cba;
+}
+
+#camera-btn:active {
+    box-shadow: 1px 1px 5px #008cba inset;
+}
+
+/* loader */
+#loader {
+    z-index: 9999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(230, 230, 230, 0.5) url('../img/Spinner.gif') no-repeat center;
+    background-size: 15%;
+    display: none;
+}

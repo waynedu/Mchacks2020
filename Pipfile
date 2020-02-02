@@ -1,0 +1,23 @@
+[[source]]
+
+verify_ssl = true
+name = "pypi"
+url = "https://pypi.python.org/simple"
+
+
+[dev-packages]
+
+
+
+[packages]
+
+django = "==1.11.7"
+"django-bootstrap4" = "*"
+requests = "*"
+mysqlclient = "*"
+geolocation-python = "*"
+
+
+[requires]
+
+python_version = "3.5"
