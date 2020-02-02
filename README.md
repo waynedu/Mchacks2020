@@ -37,6 +37,8 @@ Use of the Twilio SMS API to send reports and updates over SMS to potential pare
 
 #Requirements
 pip install django
+
 pip install django-bootstrap4
+
 pip install mysql
 
