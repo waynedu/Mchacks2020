@@ -36,6 +36,7 @@ Use of other API to help fetch the data as more data more lives can be saved lik
 Use of the Twilio SMS API to send reports and updates over SMS to potential parents or guardians of the lost ones.
 
 #Requirements
+
 pip install django
 
 pip install django-bootstrap4
