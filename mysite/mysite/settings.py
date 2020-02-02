@@ -27,8 +27,8 @@ DEBUG = True
 ADMIN_SITE_HEADER = "Database Administration"
 ALLOWED_HOSTS = []
 API_BASE_URL = "https://api.kairos.com/"
-APP_ID = "8a519356"
-APP_KEY = "00a4a763fc4acb19af4e9c6a77cd6509"
+APP_ID = ""
+APP_KEY = ""
 # Application definition
 payload = '{"image":"https://https://media.channel3000.com/mmm-global-us-east-1/photo/2019/09/18/Brad%20Pitt%20Sept%202019.jpg_39380455_ver1.0_1280_720.jpg"}'
 INSTALLED_APPS = [
